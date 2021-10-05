@@ -3,14 +3,33 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
-		<div>
-			<nav>
-				<NavLink exact={true} to="/">
+		<div className="h-1/5 lg:h-2/6">
+			<nav className="grid grid-cols-4 h-full">
+				<NavLink
+					className="flex items-center justify-center bg-brand-blue text-brand-red text-xl sm:text-3xl lg:text-5xl font-extrabold tracking-tighter"
+					exact={true}
+					to="/"
+				>
 					music
 				</NavLink>
-				<NavLink to="/about">about</NavLink>
-				<NavLink to="/gallery">gallery</NavLink>
-				<NavLink to="/contact">contact</NavLink>
+				<NavLink
+					className="flex items-center justify-center bg-brand-yellow text-brand-pink text-xl sm:text-3xl lg:text-5xl font-extrabold tracking-tighter"
+					to="/about"
+				>
+					about
+				</NavLink>
+				<NavLink
+					className="flex items-center justify-center bg-brand-pink text-brand-yellow text-xl sm:text-3xl lg:text-5xl font-extrabold tracking-tighter"
+					to="/gallery"
+				>
+					gallery
+				</NavLink>
+				<NavLink
+					className="flex items-center justify-center bg-brand-red text-brand-blue text-xl sm:text-3xl lg:text-5xl font-extrabold tracking-tighter"
+					to="/contact"
+				>
+					contact
+				</NavLink>
 			</nav>
 		</div>
 	);
