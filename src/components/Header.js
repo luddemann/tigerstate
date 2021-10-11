@@ -12,7 +12,7 @@ const Header = () => {
 						<source media="(min-width: 1024px)" srcSet={HeaderImg} />
 						<img
 							src={HeaderImg2}
-							alt="image of avatar"
+							alt="band"
 							className="absolute inset-0 w-full h-full object-cover"
 						/>
 					</picture>
