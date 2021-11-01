@@ -11,8 +11,8 @@ const Music = () => {
 
 	return (
 		<div>
-			<div className="flex justify-between relative">
-				<div className="">
+			<div className="flex justify-between relative bg-yellow-50">
+				<div className="hidden sm:block">
 					<img
 						src={Palette1}
 						className="sticky top-0 h-screen"
@@ -20,19 +20,26 @@ const Music = () => {
 						srcset=""
 					/>
 				</div>
-				<div className="w-screen p-5">
+				<div className="w-screen p-5 mb-20">
 					<div className="max-w-5xl mx-auto">
-						<h1 className="text-brand-red text-6xl font-black tracking-tighter pb-16 pt-11 text-center">
+						<h1 className="text-brand-red text-6xl font-black tracking-tightest pb-16 pt-11 text-center">
 							releases
 						</h1>
-						<Album
-							img={Heartbeats}
-							url={links.heartbeats}
-							albumTitle="heartbeats"
-						/>
+						<div className="flex flex-col gap-12">
+							<Album
+								img={Heartbeats}
+								url={links.heartbeats}
+								albumTitle="heartbeats"
+							/>
+							<Album
+								img={Heartbeats}
+								url={links.heartbeats}
+								albumTitle="heartbeats"
+							/>
+						</div>
 					</div>
 				</div>
-				<div className="">
+				<div className="hidden sm:block">
 					<img
 						src={Palette2}
 						className="sticky top-0 h-screen"

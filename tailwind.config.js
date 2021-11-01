@@ -11,6 +11,9 @@ module.exports = {
 					red: "#833F2C",
 				},
 			},
+			letterSpacing: {
+				tightest: "-.080em",
+			},
 		},
 	},
 	variants: {
