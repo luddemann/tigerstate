@@ -1,10 +1,15 @@
 import React from "react";
 import Spotify from "../assets/png/Spotify_Logo_RGB_Green.png";
 
-const Album = ({ url, img, albumTitle, bgColor, textColor }) => {
+import SpotifyLogo from '../assets/png/spotify.png';
+import TidalLogo from '../assets/png/Tidal.png';
+import SoundcloudLogo from '../assets/png/SoundCloud.png';
+
+
+const Album = ({ spotifyUrl, img, bgColor, textColor }) => {
 	return (
-		<div className="bg-brand-red max-w-2xl h-full p-5 sm:p-8 md:p-14 mx-auto rounded-lg shadow-2xl">
-			<h3 className="text-2xl sm:text-5xl text-brand-yellow font-black tracking-tightest mb-8 ml-5">
+		<div className={`${bgColor} ${textColor} max-w-2xl h-full mx-auto shadow-2xl p-8`}>
+			{/* <h3 className="text-2xl sm:text-5xl text-brand-yellow font-black tracking-tightest mb-8 ml-5">
 				{albumTitle}
 			</h3>
 			<div className="grid grid-cols-3 items-center w-full h-full">
@@ -20,9 +25,9 @@ const Album = ({ url, img, albumTitle, bgColor, textColor }) => {
 						</p>
 						<img src={Spotify} alt="" className="w-20" />
 					</div>
-					<button className="rounded-full bg-brand-yellow bg-opacity-50 p-12 sm:p-16 shadow-2xl hover:bg-opacity-30 transition">
+					<button className="rounded-full bg-brand-yellow  bg-opacity-50 p-12 sm:p-16 shadow-2xl hover:bg-opacity-30 transition">
 						<svg
-							className="w-8 h-8 sm:w-16 sm:h-16 stroke-current text-brand-yellow "
+							className="w-8 h-8 sm:w-16 sm:h-16 stroke-current text-brand-yellow"
 							viewBox="0 0 36 42"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +49,21 @@ const Album = ({ url, img, albumTitle, bgColor, textColor }) => {
 				</p>
 			</div>
 			<div className="text-xs flex flex-row items-center justify-between mt-8 tracking-tighter font-semibold text-brand-yellow underline">
+				<a href="">apple music</a>
+				<a href="">tidal</a>
+				<a href="">youtube</a>
+				<a href="">soundcloud</a>
+			</div> */}
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center">
+				<img
+					src={img}
+					alt="album cover"
+					className="w-full"
+				/>
+				<iframe className="" src={spotifyUrl} width="100%" height="100%" frame-border="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+			</div>
+			
+			<div className="text-sm flex flex-row items-center justify-between mt-8 tracking-tighter font-semibold underline">
 				<a href="">apple music</a>
 				<a href="">tidal</a>
 				<a href="">youtube</a>

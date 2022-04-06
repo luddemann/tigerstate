@@ -2,6 +2,7 @@ import React from "react";
 import Palette1 from "../../assets/png/palette-1.png";
 import Palette2 from "../../assets/png/palette-2.png";
 import Heartbeats from "../../assets/png/EPEPEP.png";
+import BedtimeStories from "../../assets/png/vinyl uten punktum.png"
 import Album from "../../components/Album";
 
 const Music = () => {
@@ -11,7 +12,7 @@ const Music = () => {
 
 	return (
 		<div>
-			<div className="flex justify-between relative bg-yellow-50">
+			<div className="flex justify-between relative bg-yellow-100">
 				<div className="hidden sm:block">
 					<img
 						src={Palette1}
@@ -28,13 +29,15 @@ const Music = () => {
 						<div className="flex flex-col gap-12">
 							<Album
 								img={Heartbeats}
-								url={links.heartbeats}
-								albumTitle="heartbeats"
+								spotifyUrl="https://open.spotify.com/embed/album/1ii3UbL5AnTBatU4vVXivL?utm_source=generator"
+								bgColor="bg-brand-red"
+								textColor="text-brand-blue"
 							/>
 							<Album
-								img={Heartbeats}
-								url={links.heartbeats}
-								albumTitle="heartbeats"
+								img={BedtimeStories}
+								spotifyUrl="https://open.spotify.com/embed/album/0ORKCvap06oVArrFfw88t8?utm_source=generator"
+								bgColor="bg-brand-blue"
+								textColor="text-brand-red"
 							/>
 						</div>
 					</div>
@@ -51,5 +54,6 @@ const Music = () => {
 		</div>
 	);
 };
+
 
 export default Music;
