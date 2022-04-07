@@ -6,9 +6,6 @@ import BedtimeStories from "../../assets/png/vinyl uten punktum.png"
 import Album from "../../components/Album";
 
 const Music = () => {
-	const links = {
-		heartbeats: "https://google.com",
-	};
 
 	return (
 		<div>
@@ -32,12 +29,14 @@ const Music = () => {
 								spotifyUrl="https://open.spotify.com/embed/album/1ii3UbL5AnTBatU4vVXivL?utm_source=generator"
 								bgColor="bg-brand-red"
 								textColor="text-brand-blue"
+								latest={true}
 							/>
 							<Album
 								img={BedtimeStories}
 								spotifyUrl="https://open.spotify.com/embed/album/0ORKCvap06oVArrFfw88t8?utm_source=generator"
 								bgColor="bg-brand-blue"
 								textColor="text-brand-red"
+								latest={false}
 							/>
 						</div>
 					</div>
